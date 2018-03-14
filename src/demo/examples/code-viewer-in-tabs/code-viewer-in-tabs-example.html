@@ -1,0 +1,23 @@
+<mat-tab-group>
+	<mat-tab label="app.component.html">
+		<mat-code-viewer language="html">&lt;h1&gt;Header 1&lt;/h1&gt;</mat-code-viewer>
+	</mat-tab>
+	<mat-tab label="app.component.ts">
+		<mat-code-viewer language="typescript" tabSize="4">// There are literal tabs here! Geddit? Indents in code... Material Design tabs.. Oh nevermind.
+import &#123; Component &#125; from '@angular/core';
+@Component(&#123;
+	selector: 'app-root',
+	templateUrl: 'app.component.html'
+&#125;)
+export class AppComponent &#123;
+	title = 'app';
+&#125;</mat-code-viewer>
+	</mat-tab>
+	<mat-tab label="random-python-script.py">
+		<mat-code-viewer language="python">from math import pi
+print(pi)
+print(pi / 2)
+print("I love Python!")
+print(list(range(1, 5)))</mat-code-viewer>
+	</mat-tab>
+</mat-tab-group>

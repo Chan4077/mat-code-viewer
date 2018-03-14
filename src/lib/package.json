@@ -1,0 +1,17 @@
+{
+	"name": "mat-code-viewer",
+	"version": "1.0.0",
+	"description": "Code viewer for Angular Material",
+	"author": "Edric Chan",
+	"license": "MIT",
+	"main": "./bundles/mat-code-viewer.umd.js",
+	"module": "./bundles/mat-code-viewer.es5.js",
+	"es2015": "./bundles/mat-code-viewer.js",
+	"peerDependencies": {
+		"@angular/core": "^5.2.0",
+		"@angular/common": "^5.2.0",
+		"@angular/cdk": "^5.2.4",
+		"@angular/material": "^5.2.4"
+	},
+	"typings": "code-viewer.d.ts"
+}

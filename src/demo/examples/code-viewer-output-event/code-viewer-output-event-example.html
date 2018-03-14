@@ -1,0 +1,8 @@
+<p>Note: See the console after the copy button is clicked. A boolean should be outputted.</p>
+<mat-code-viewer language="javascript" (codeCopied)="onCodeCopied($event)" tabSize="4">var myFunc = (a, b) => &#123;
+	if (a) &#123;
+		console.log('Code goes here');
+	&#125; else if (b) &#123;
+		alert(`B is: $&#123;b&#125;`);
+	&#125;
+&#125;</mat-code-viewer>

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+@import '../lib/code-viewer/theming';
+@include mat-core();
+$demo-app-primary: mat-palette($mat-indigo);
+$demo-app-accent: mat-palette($mat-pink, A400);
+$demo-app-theme: mat-light-theme($demo-app-primary, $demo-app-accent);
+@include angular-material-theme($demo-app-theme);
+@include mat-code-viewer-theme($demo-app-theme);
+
+// Styling for code
+code, tt, kbd, xmp {
+	font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+}
+// No padding on app content
+.app-content {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	position: absolute;
+	margin: 0;
+}
+.app-padding {
+	padding: 8px;
+}
+.flex-spacer {
+	flex: 1;
+}

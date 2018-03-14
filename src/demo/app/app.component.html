@@ -1,0 +1,65 @@
+<mat-toolbar color="primary" class="mat-elevation-z3">
+	<code>mat-code-viewer</code>
+	<span class="flex-spacer"></span>
+	<a mat-icon-button href="https://github.com/Chan4077/mat-code-viewer" matTooltip="View source code" matTooltipPosition="left"><mat-icon>code</mat-icon></a>
+</mat-toolbar>
+<div class="app-padding">
+	<section class="app-demo" id="basic-code-viewer">
+		<h1>Basic code viewer</h1>
+		<mat-code-viewer language="html">&lt;h1&gt;Header 1&lt;/h1&gt;</mat-code-viewer>
+	</section>
+	<section class="app-demo" id="code-viewer-in-tabs">
+		<h1>Code viewer in tabs</h1>
+		<mat-tab-group>
+			<mat-tab label="i-love-html.html">
+				<mat-code-viewer language="html">&lt;h1&gt;Header 1&lt;/h1&gt;</mat-code-viewer>
+			</mat-tab>
+			<mat-tab label="typescript.ts">
+				<mat-code-viewer language="typescript" tabSize="4">// There are literal tabs here! Geddit? Indents in code... Material Design tabs.. Oh nevermind.
+import &#123; Component &#125; from '@angular/core';
+@Component(&#123;
+	selector: 'app-root',
+	templateUrl: 'app.component.html'
+&#125;)
+export class AppComponent &#123;
+	title = 'app';
+&#125;</mat-code-viewer>
+			</mat-tab>
+			<mat-tab label="first.py">
+				<mat-code-viewer language="python">from math import pi
+print(pi)
+print(pi / 2)
+print("I love Python!")
+print(list(range(1, 5)))</mat-code-viewer>
+			</mat-tab>
+		</mat-tab-group>
+	</section>
+	<!-- <section class="app-demo" id="overflow-code-viewer">
+		<h1>Code viewer with overflow</h1>
+		<mat-code-viewer language="html">&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;p&gt;Hello world! This is a test on a code snippet! If you see the code nicely highlighted, it works! I should try to put more lorem ipsum text here, but I have just hit a writer's block. Oh well. I'm just gonna write lots and lots of stuff here! :D And here's some &lt;em&gt;emphasis&lt;/em&gt;, as well as &lt;strong&gt;bold&lt;/strong&gt;! &lt;sup&gt;See the source code for more info&lt;/sup&gt;&lt;/p&gt;</mat-code-viewer>
+	</section> -->
+	<section class="app-demo" id="theming-code-viewer">
+		<h1>Code viewer with theming</h1>
+		<mat-code-viewer language="html" color="primary">&lt;h1&gt;Header 1&lt;/h1&gt;</mat-code-viewer>
+	</section>
+	<section class="app-demo" id="lines-code-viewer">
+		<h1>Code viewer with lines</h1>
+		<mat-code-viewer language="html" lines>&lt;h1&gt;Header 1&lt;/h1&gt;</mat-code-viewer>
+	</section>
+	<section class="app-demo" id="code-viewer-output">
+		<h1>Code viewer with output event</h1>
+		
+		<mat-code-viewer language="javascript" (codeCopied)="onCodeCopied($event)" tabSize="4">var myFunc = (a, b) => &#123;
+	if (a) &#123;
+		console.log('Code goes here');
+	&#125; else if (b) &#123;
+		alert(`B is: $&#123;b&#125;`);
+	&#125;
+&#125;</mat-code-viewer>
+	</section>
+	<section class="app-demo" id="customizable-code-viewer">
+		<h1>Customizable code viewer</h1>
+		<p>TODO: Add demo here</p>
+	</section>
+</div>
